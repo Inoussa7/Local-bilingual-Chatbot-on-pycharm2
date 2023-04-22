@@ -7,7 +7,7 @@ import string
 import random
 from playsound import playsound
 import time
-openai.api_key = "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"
+openai.api_key = "Your_API-KEY-HERE"
 
 def translate(text, target_language):
     response = openai.Completion.create(
