@@ -8,7 +8,7 @@ import string
 import random
 from playsound import playsound
 import time
-openai.api_key = "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"
+openai.api_key = "YOUR_API_KEY_HERE"
 
 def translate(text, target_language):
     response = openai.Completion.create(
@@ -57,7 +57,7 @@ def generate_text(prompt, language):
     return message
 
 # Set up OpenAI API credentials
-openai.api_key = "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"
+openai.api_key = "YOUR_API_KEY_HERE"
 
 def generate_response(text, language,processed_text):
     # Define the GPT-3.5 model to use based on language
