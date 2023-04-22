@@ -1,5 +1,6 @@
 import os
 import openai
+import translator as translator
 from gtts import gTTS
 import pyttsx3
 import speech_recognition as sr
@@ -7,7 +8,7 @@ import string
 import random
 from playsound import playsound
 import time
-openai.api_key = "Your_API-KEY-HERE"
+openai.api_key = "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"
 
 def translate(text, target_language):
     response = openai.Completion.create(
@@ -56,7 +57,7 @@ def generate_text(prompt, language):
     return message
 
 # Set up OpenAI API credentials
-openai.api_key = "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"
+openai.api_key = "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"
 
 def generate_response(text, language,processed_text):
     # Define the GPT-3.5 model to use based on language
